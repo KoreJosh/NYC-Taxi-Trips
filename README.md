@@ -5,6 +5,7 @@ The project details the New york City Taxi trips from 2017 to 2020, taking a llo
 
 ## Data Source
 Dataset was provided courtsey of Quantum Analytics and contains 6 csv file formart of 28million trips between the year 2017 and 2020.
+[Download here](https://drive.google.com/drive/folders/1YN0FKtwIrXpanSUyGMJ6pw5JMsGJ6tFT?usp=drive_link)
 
 ## Tools
 Power BI - Power Query was used to clean,query, and explore the datasets
@@ -71,7 +72,7 @@ Trip analysis like this should be carried out occasionally, as
 - it would help the commision to know how to allot budgets in case of road repairs and  new drivers who are just starting.
 - With understanding of the buiest time of day, drivers can futher plan their day, to take rest at appropriate time or engage in other jobs or tasks to increase their wages.
       
-      
+ Interact with the Dashboard [Here](https://app.powerbi.com/links/ds5q2doDnp?ctid=68729aab-8399-4b73-a28a-1b26ee64a17f&pbi_source=linkShare)     
 
 
 
