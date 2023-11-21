@@ -1,5 +1,5 @@
 # NYC-Taxi-Trips
-![](https://github.com/KoreJosh/NYC-Taxi-Trips/blob/main/images%20(7).jpg)
+![](https://github.com/KoreJosh/NYC-Taxi-Trips/blob/main/NYC%20TAXI%20TRIPS.jpg)
 
 ## Project Overview
 The project details the New york City Taxi trips from 2017 to 2020, taking a llok at the most busiest week of the year, time of day, the most pick-up and drop off location and trend of trips over the year.
@@ -65,6 +65,7 @@ Turning negetive 'congestion surcharge' to positive:
 - Mornings and Night were the buiest time of the day, its not surprising as the city never sleeps and done of the busiest in the world.
 - 74 Manhattan, 75Manhattan, 41Manhattan and 7 Queens are the most pick-up and drop off location for passengers.
 - The first few weeks of each year are usually the most buiest weeks of the year, reason been that passengers are trying to get back to work and most travellers are leaving for their various destination.
+![](https://github.com/KoreJosh/NYC-Taxi-Trips/blob/main/NYC%20TAXI%20DASHBOARD.jpg)
 
 ## Recommendations
 Trip analysis like this should be carried out occasionally, as 
