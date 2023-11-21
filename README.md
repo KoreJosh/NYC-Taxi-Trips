@@ -34,12 +34,15 @@ In the initial data preparation phase, we performed the follwing tasks:
 Few Power Query carried out in Power BI.
 
 For any trips that have a fare amount but have a trip distance of 0, calculate the distance this way: (Fare amount - 2.5) / 2.5:
+
 ```Table.ReplaceValue(#"Changed Type1",each [trip_distance],each if [trip_distance]=0 and [fare_amount]>0 then (([fare_amount]-2.5)/2.5) else  [trip_distance],Replacer.ReplaceValue,{"trip_distance"})```
 
 For any trips that have a trip distance but have a fare amount of 0, calculate the fare amount this way: 2.5 + (trip distance x 2.5):
+
 ```Table.ReplaceValue(#"Replaced Value3",each[fare_amount],each if [fare_amount]=0 and [trip_distance]>0 then (2.5+([trip_distance]*2.5)) else[fare_amount],Replacer.ReplaceValue,{"fare_amount"})```
 
  Added a column to sort trips that have 'fare amount' and 'surcharges' as zero and name the negetive to futher carry out nalysis on the rows:
+ 
  ```Table.AddColumn(#"Replaced Value4", "Custom", each if [fare_amount]<0 and [extra]<0 and [mta_tax]<0 and [improvement_surcharge]<0 and [congestion_surcharge]<0 then "neg" else "ok")```
 
 Turning negetive 'fare amount' to positive:
@@ -47,15 +50,19 @@ Turning negetive 'fare amount' to positive:
  ```Table.ReplaceValue(#"Added Custom3",each [fare_amount],each if [Custom]="neg" then [fare_amount]*-1 else [fare_amount],Replacer.ReplaceValue,{"fare_amount"})```
 
 Turning negetive 'extra' to positive:
+
 ```Table.ReplaceValue(#"Replaced Value5",each [extra],each if [Custom]="neg" then [extra]*-1 else [extra],Replacer.ReplaceValue,{"extra"})```
 
 Turning negetive 'mta tax' to positive:
+
  ```Table.ReplaceValue(#"Replaced Value6",each[mta_tax],each if [Custom]="neg" then [mta_tax]*-1 else [mta_tax],Replacer.ReplaceValue,{"mta_tax"})```
 
 Turning negetive 'improvement surcharge' to positive:
+
 ```Table.ReplaceValue(#"Changed Type2",each [improvement_surcharge],each if [Custom]="neg" then [improvement_surcharge]*-1 else [improvement_surcharge],Replacer.ReplaceValue,{"improvement_surcharge"})```
 
 Turning negetive 'congestion surcharge' to positive:
+
 ```Table.ReplaceValue(#"Changed Type3",each [congestion_surcharge],each if [Custom]="neg" then [congestion_surcharge]*-1 else [congestion_surcharge],Replacer.ReplaceValue,{"congestion_surcharge"})```
 
 
