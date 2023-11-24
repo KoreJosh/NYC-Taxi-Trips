@@ -2,7 +2,7 @@
 ![](https://github.com/KoreJosh/NYC-Taxi-Trips/blob/main/images%20(12).jpg)
 
 ## Project Overview
-The project details the New york City Taxi trips from 2017 to 2020, taking a llok at the most busiest week of the year, time of day, the most pick-up and drop off location and trend of trips over the year.
+The project details the New york City Taxi trips from 2017 to 2020, taking a look at the most busiest week of the year, time of day, the most pick-up and drop off location and trend of trips over the year.
 
 ## Data Source
 Dataset was provided courtsey of Quantum Analytics and contains 6 csv file formart of 28million trips between the year 2017 and 2020.
