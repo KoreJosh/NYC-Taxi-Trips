@@ -1,5 +1,5 @@
 # NYC-Taxi-Trips
-![](https://github.com/KoreJosh/NYC-Taxi-Trips/blob/main/images%20(12).jpg)
+![](https://github.com/KoreJosh/NYC-Taxi-Trips/blob/main/Taxi.jpg)
 
 ## Project Overview
 The project details the New york City Taxi trips from 2017 to 2020, taking a look at the most busiest week of the year, time of day, the most pick-up and drop off location and trend of trips over the year.
